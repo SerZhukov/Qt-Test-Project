@@ -31,7 +31,7 @@ Widget::Widget(QWidget* parent) : QWidget(parent)
 
 void Widget::new_window()
 {
-    New_Window* new_window = new New_Window;
+    New_Window* new_window = new New_Window(label);
     label->setText("Open new window");
     new_window->resize(100, 100);
     new_window->show();
